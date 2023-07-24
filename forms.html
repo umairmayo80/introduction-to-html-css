@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 30px;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+
+        form {
+            margin-top: 20px;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forms with differnt input types, example</h1>
+
+
+    <form action="">
+        <label for="text-input">Text input:</label>
+        <input type="text" id="text-input" name="text-input" placeholder="Enter your name umer" required>
+
+        <label for="password-input">Password Input</label>
+        <input type="password" id="password-input" name="password-input" placeholder="Enter your password" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+
+
+        
+        <label for="number-input">Number Input:</label>
+        <input type="number" id="number-input" name="number-input" placeholder="Enter a number" required>
+
+        <label for="date-input">Date Input:</label>
+        <input type="date" id="date-input" name="date-input" required>
+
+        <label for="checkbox-input" style="display: inline;">I agree to the terms and conditions.</label>
+        <input type="checkbox" id="checkbox-input" name="checkbox-input" value="1" style="display: inline; width: auto; margin: auto;">
+        
+
+        <label for="radio-input">Radio Buttons:</label>
+        <input type="radio" id="radio-input1" name="radio-input" value="option1" style="display: inline; width: auto; margin: auto;">
+        <label for="radio-input1" style="display: inline; width: auto; margin: auto;">Option 1</label>
+        <input type="radio" id="radio-input2" name="radio-input" value="option2" style="display: inline; width: auto; margin: auto;">
+        <label for="radio-input2" style="display: inline; width: auto; margin: auto;">Option 2</label>
+
+
+        <label for="select-input">Favorite Game</label>
+        <select id="select-input" name="select-input" required>
+            <option value="hockey">Hockey</option>
+            <option value="badmintion">Badmintion</option>
+            <option value="snake">Snake</option>
+        </select>
+
+        
+        <label for="textarea-input">Textarea:</label>
+        <textarea id="textarea-input" name="textarea-input" rows="4" placeholder="Enter your message"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
