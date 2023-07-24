@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +17,16 @@
 
         h1 {
             color: #007BFF;
+        }
+        img{
+            display: inline;
+            height: 500px;
+            width: 100px;
+        }
+        span {
+            height: 100px;
+            width: 1000px;
+            margin: 100px;
         }
 
         .element-container {
@@ -49,13 +60,15 @@
         }
     </style>
 </head>
+
 <body>
     <h1>Common HTML Elements</h1>
 
     <div class="element-container">
         <h2 class="element-name">&lt;h1&gt; to &lt;h6&gt;</h2>
         <div class="element-description">
-            <p>Heading elements are used to define headings and subheadings. They represent a hierarchical structure for your content.</p>
+            <p>Heading elements are used to define headings and subheadings. They represent a hierarchical structure for
+                your content.</p>
             <p class="example">Example: <code>&lt;h1&gt;Main Heading&lt;/h1&gt;</code></p>
         </div>
     </div>
@@ -63,11 +76,15 @@
     <div class="element-container">
         <h2 class="element-name">&lt;p&gt;</h2>
         <div class="element-description">
-            <p>The &lt;p&gt; element is used for paragraphs of text. It represents a block of text that forms a cohesive unit.</p>
+            <p>The &lt;p&gt; element is used for paragraphs of text. It represents a block of text that forms a cohesive
+                unit.</p>
+              
             <p class="example">Example: <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></p>
         </div>
     </div>
 
+    <!-- To add tooltip -->
+    <p title="About W3Schools">W3Schools is a web developer's site.</p>
     <!-- Add more common HTML elements here -->
 
     <div class="separator"></div>
@@ -77,7 +94,8 @@
         <div class="element-description">
             <p>The &lt;img&gt; element is used to display images on the webpage.</p>
             <p class="example">Example: <code>&lt;img src="example.jpg" alt="Example Image"&gt;</code></p>
-            <img src="image.jpg" alt="placeholder for image" width="100" height="100">
+            <img src="image.jpg" alt="placeholder for image">
+            <span>Hello World</span>
         </div>
     </div>
 
@@ -85,14 +103,16 @@
         <h2 class="element-name">&lt;a&gt;</h2>
         <div class="element-description">
             <p>The &lt;a&gt; (anchor) element is used for creating links to other web pages or resources.</p>
-            <p class="example">Example: <code>&lt;a href="https://www.example.com"&gt;Visit Example Website&lt;/a&gt;</code></p>
+            <p class="example">Example:
+                <code>&lt;a href="https://www.example.com"&gt;Visit Example Website&lt;/a&gt;</code></p>
         </div>
     </div>
 
     <div class="element-container">
         <h2 class="element-name">&lt;ul&gt; and &lt;li&gt;</h2>
         <div class="element-description">
-            <p>The &lt;ul&gt; element is used for creating unordered lists, and the &lt;li&gt; element is used for list items within the list.</p>
+            <p>The &lt;ul&gt; element is used for creating unordered lists, and the &lt;li&gt; element is used for list
+                items within the list.</p>
             <p class="example">Example:
                 <code>
                     &lt;ul&gt;<br>
@@ -140,7 +160,8 @@
     <div class="element-container">
         <h2 class="element-name">&lt;div&gt;</h2>
         <div class="element-description">
-            <p>The &lt;div&gt; element is used as a container to group other elements together or to apply styles to a section of the page.</p>
+            <p>The &lt;div&gt; element is used as a container to group other elements together or to apply styles to a
+                section of the page.</p>
             <p class="example">Example:
                 <code>
                     &lt;div style="background-color: lightblue; padding: 10px;"&gt;<br>
@@ -148,10 +169,12 @@
                     &lt;/div&gt;
                 </code>
             </p>
-            <p>Divs are commonly used in conjunction with CSS for layout purposes and to apply styles to groups of elements.</p>
+            <p>Divs are commonly used in conjunction with CSS for layout purposes and to apply styles to groups of
+                elements.</p>
         </div>
     </div>
 
     <div class="separator"></div>
 </body>
+
 </html>
