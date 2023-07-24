@@ -1,0 +1,55 @@
+/* element selectors */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333; /*text color*/
+    text-align: center;
+}
+
+table {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    width: 80%; 
+    margin: auto; /*dark css trick to center a block element, define it`s width then set margin auto*/
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+
+
+h1 {
+    color:#007BFF;
+}
+
+/* class selector */
+
+.employee-title{
+    font-size: large;
+    font-weight: bold;
+    margin: 20px;
+}
+
+
+/*  id selector */
+
+#table-example {
+    margin-top: 20px;
+  }
+
+/* Descendant selector */
+
+thead tr {
+    background-color: #007BFF;
+    color: #fff;
+  }
+
+
+
