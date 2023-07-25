@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Example</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+
+        }
+        .box{
+            font-size: 2rem;
+            text-align: center;
+            background-color: aliceblue;
+            color: grey;
+            display: none;
+            width: 50vw;
+            height: 50vh;
+
+
+        }
+
+
+        /* css for mobile break-point*/
+        @media only screen and (max-width:576px) {
+            #box-1{
+                display: block;
+            }
+        }
+
+        @media screen and (min-width:577px) and (max-width:992px){
+            #box-2{
+                display: block;
+            }            
+        }
+        @media screen and (min-width:992px) and (max-width:1200px) {
+            #box-3{
+                display: block;
+            }
+        }
+        @media screen and (min-width:1200px) {
+            #box-4{
+                display: block;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1"><p>Mobile View</p></div>
+    <div class="box" id="box-2"><p>Tablet View</p></div>
+    <div class="box" id="box-3"><p>Computer View</p></div>
+    <div class="box" id="box-4"><p>WideScreen View</p></div>
+</body>
+</html>
