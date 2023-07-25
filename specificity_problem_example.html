@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Specificity Test</title>
+  <style>
+    
+    p {
+      color: blue;
+    }
+
+    
+    #special-paragraph {
+      color: red;
+    }
+
+
+    .container p {
+      color: green;
+    }
+
+   /* if same element is targted using same selector then the last property will be applied */
+    p {
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>This is a paragraph inside container. It should be colored green.</p>
+  </div>
+  <p id="special-paragraph">This is a special paragraph with an ID. It should be colored red.</p>
+  <p>This is another regular paragraph. It should be colored orange due to its higher specificity.</p>
+</body>
+</html>
