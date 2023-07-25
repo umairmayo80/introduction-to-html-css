@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light and Dark Mode</title>
+  <style>
+    :root {
+  /* Light Mode Colors */
+  --primary-bg-color: #f9f9f9;      /* Light gray background */
+  --primary-text-color: #333;      /* Dark gray text */
+  --secondary-bg-color: #007BFF;   /* Blue secondary background */
+  --secondary-text-color: #fff;    /* White text for buttons and headings */
+
+    /* Dark Mode Colors */
+    --dark-mode-bg-color: #333;      /* Dark background for dark mode */
+  --dark-mode-text-color: #f9f9f9; /* Light text for dark mode */
+
+
+
+    }
+
+    body {
+      background-color: var(--primary-bg-color);
+      color: var(--primary-text-color);
+      transition: background-color 0.5s, color 0.3s;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: var(--secondary-bg-color);
+      color: var(--secondary-text-color);
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Dark mode styles */
+    body.dark-mode {
+      --primary-bg-color:var(--dark-mode-bg-color);
+      --primary-text-color: var(--dark-mode-text-color);
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Light and Dark Mode</h1>
+    <p>Click the button below to switch between light and dark mode:</p>
+    <button class="button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  </div>
+
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+
+</html>
