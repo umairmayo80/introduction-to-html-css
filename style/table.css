@@ -17,6 +17,12 @@ table {
     margin: auto; /*dark css trick to center a block element, define it`s width then set margin auto*/
 }
 
+/* Hover effect for the table */
+table:hover {
+    width: 85%; /* Increase the width by 5% to give the growing effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a box-shadow for the highlighted effect */
+    transition: width 0.3s ease; /* Add a smooth transition for the width change */
+  }
 th, td {
     border: 1px solid #ccc;
     padding: 8px;
@@ -50,6 +56,12 @@ thead tr {
     background-color: #007BFF;
     color: #fff;
   }
+
+
+/*n-th child selector*/
+tr:nth-child(3n){
+    background-color: aqua;
+}
 
 
 

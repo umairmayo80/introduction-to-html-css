@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 15000px;
+            background-color: aliceblue;
+        }
+
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            width: 200px;
+            height: 200px;
+        }
+
+        #box1 {
+            position: static;
+            /*it is default position. Left, top etc has no effect on it*/
+        }
+
+        #box3 {
+            /* relative to its normal position. The old position occupies the space leaving a gap behind. Now we can apply left, top positioning properties etc */
+
+            /* position: relative; */
+
+
+            /*relative to its positioned parent. The old position not occupied and no gap behind. Now we can apply left, top positioning properties etc*/
+            /* position: absolute;  */
+
+            /*slide 100px from top*/
+            /* top: 100px;  */
+            /* left: 100px; */
+
+
+            /* position: fixed; */
+            /* positions element relative to the browser window, same as absolute, old space is removed from normal document flow and leaves no gap */
+            /* bottom: 10px; */
+
+
+            position: sticky;
+            /* positions element Elements with position: sticky; are positioned based on the user's scroll position relative to the nearest ancestor with a scrolling mechanism (e.g., scrolling container or the viewport).
+            Sticky positioning behaves like relative until the element reaches a specified scroll position, and then it behaves like fixed.
+            The element becomes "stuck" to the top, bottom, left, or right of the scrolling container or viewport, depending on the specified top, right, bottom, or left value. */
+            top: 100px;
+
+        }
+
+        /* #box2{
+            position: fixed;
+            top: 10px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>
