@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID CRASH COURSE</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0;
+        }
+        body{
+            text-align: center;
+        }
+        .container{
+            background-color: red;
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-rows: repeat(3,1fr); */
+            grid-template-rows: 4rem 1fr 3rem;
+
+            column-gap: 1rem;
+            row-gap: 1rem;
+            /* 1fr means 1 fraction of entire grid */
+
+
+            /* for items that has width, we can justify them */
+            /* for horizontal */
+            /* justify-items: start; */
+            /* for vertical */
+            /* align-items:normal;  */
+
+            
+        }
+        .item{
+            background-color: aqua;
+            /* height: 10vh;
+            width: 10vw; */
+        }
+
+
+        .header, .footer{
+            /* grid-column-start: 1;
+            grid-column-end: 4; */
+
+            /* Another method to span the columns */
+            grid-column: 1 / span 3;
+            background-color: black;
+            color: aliceblue;
+
+            /* Create nested grid to center content */
+            display: grid;
+            justify-items: center;
+             /* Center horizontally */
+            align-items: center;
+             /* Center vertically */
+
+             /* Center the item both vertically and horizontally */
+             /* place-self:center; */
+
+
+
+        }
+        .header, .footer{
+            /* justify-self: center; */
+            /* align-self: center; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header"> This is header
+        </div>
+        <div class="item">
+        </div>
+        <div class="item">
+        </div>
+        <div class="item">
+        </div>
+        <div class="item footer"> This is footer
+        </div>
+
+    </div>
+</body>
+</html>
