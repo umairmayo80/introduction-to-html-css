@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Alignment Example</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 100px 100px;
+            grid-template-rows: 100px 100px;
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+        }
+
+        .item {
+            border: 1px solid red;
+        }
+
+        .justify-content-center {
+            justify-content: center;
+        }
+
+        .align-content-center {
+            align-content: center;
+        }
+
+        .justify-items-center {
+            justify-items: center;
+            align-items: center;
+        }
+
+        .align-items-center {
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>justify-content: center</h2>
+    <div class="container justify-content-center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <h2>align-content: center</h2>
+    <div class="container align-content-center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <h2>justify-items: center</h2>
+    <div class="container justify-items-center">
+        <div class="item justify-items-center">1</div>
+        <div class="item justify-items-center">2</div>
+        <div class="item justify-items-center">3</div>
+        <div class="item justify-items-center">4</div>
+    </div>
+
+    <h2>align-items: center</h2>
+    <div class="container">
+        <div class="item align-items-center">1</div>
+        <div class="item align-items-center">2</div>
+        <div class="item align-items-center">3</div>
+        <div class="item align-items-center">4</div>
+    </div>
+</body>
+</html>
