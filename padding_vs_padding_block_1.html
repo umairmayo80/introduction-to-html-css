@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding-Block Example</title>
+    <style>
+        .container {
+            writing-mode: vertical-lr; /* Change the writing mode to vertical */
+            border: 1px solid black;
+            height: 300px;
+            padding-block: 20px; /* Apply padding to all child elements */
+        }
+
+        .item {
+            background-color: lightblue;
+            height: 70px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+</body>
+</html>
